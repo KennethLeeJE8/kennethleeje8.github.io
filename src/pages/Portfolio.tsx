@@ -19,7 +19,7 @@ const portfolioData: Project[] = [
     title: "IOI Properties Data Scraping",
     description: "This project was done during my time at IOI Properties Group, a property development company based in Malaysia. The goal of this project was to gain insight into the company's image by extracting information from relevant public forums.",
     fullDescription: "The goal of this project was to extract data from a popular website in Malaysia called Lowyat Forum, which is similar to Reddit. The client wanted to know what their brand image was on the website, taking comments from threads about their recent property developments. I extracted the text from multiple threads and forums using Python, developing a Microsoft Excel report that gave insight into the company's image.",
-    image: "/lovable-uploads/56953092-b065-4fee-8b8a-614168b530e8.png",
+    image: "/images/portfolio/lowyat2.webp",
     technologies: ["Python", "Web Scraping", "Data Analysis", "NLP"],
     githubUrl: "#",
     liveUrl: "#"

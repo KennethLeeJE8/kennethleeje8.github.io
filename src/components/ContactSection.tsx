@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Bookmark } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -22,7 +22,7 @@ const ContactSection = () => {
               <Linkedin size={20} />
             </a>
             <a href="https://kennethleeje.substack.com" className="p-3 bg-black text-white rounded hover:bg-gray-800 transition-colors" target="_blank" rel="noopener noreferrer">
-              <span className="font-semibold text-xs">Substack</span>
+              <Bookmark size={20} />
             </a>
           </div>
           
