@@ -10,6 +10,7 @@ interface Article {
 }
 
 const RSS_URL = 'https://kennethleeje.substack.com/feed';
+const SUBSTACK_URL = 'https://kennethleeje.substack.com';
 
 const parseRSS = async (): Promise<Article[]> => {
   const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(RSS_URL)}`);
@@ -72,7 +73,7 @@ const Articles = () => {
             Here are my latest thoughts from Substack.
           </p>
           <div className="text-sm text-gray-500">
-            <a href="#" className="hover:text-black transition-colors border-b border-gray-300 hover:border-black">
+            <a href={SUBSTACK_URL} target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors border-b border-gray-300 hover:border-black">
               Follow me on Substack →
             </a>
           </div>
@@ -88,28 +89,30 @@ const Articles = () => {
             {articles.map((article, idx) => (
               <article
                 key={idx}
-                className={`bg-white rounded-lg shadow-sm overflow-hidden${idx === 2 ? ' md:col-span-2 mx-auto' : ''}`}
+                className={`bg-white rounded-lg shadow-sm overflow-hidden${idx === 2 ? ' md:col-span-2 mx-auto' : ''} hover:shadow-md transition-shadow`}
               >
-                <div className="aspect-video bg-gray-200 flex items-center justify-center text-gray-500 text-sm">
-                  {article.image ? (
-                    <img src={article.image} alt={article.title} className="object-contain max-h-96 w-auto mx-auto" />
-                  ) : (
-                    <span className="text-gray-400">No Image</span>
-                  )}
-                </div>
-                <div className="p-6">
-                  <h2 className="text-xl font-medium text-black mb-3">
-                    {article.title}
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    {article.description}
-                  </p>
-                  <div className="flex items-center gap-4 text-sm text-gray-500">
-                    <span>Published on Substack</span>
-                    <span>•</span>
-                    <span>{formatDate(article.pubDate)}</span>
+                <a href={article.link} target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-video bg-gray-200 flex items-center justify-center text-gray-500 text-sm">
+                    {article.image ? (
+                      <img src={article.image} alt={article.title} className="object-contain max-h-96 w-auto mx-auto" />
+                    ) : (
+                      <span className="text-gray-400">No Image</span>
+                    )}
                   </div>
-                </div>
+                  <div className="p-6">
+                    <h2 className="text-xl font-medium text-black mb-3 hover:text-gray-700">
+                      {article.title}
+                    </h2>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      {article.description}
+                    </p>
+                    <div className="flex items-center gap-4 text-sm text-gray-500">
+                      <span>Published on Substack</span>
+                      <span>•</span>
+                      <span>{formatDate(article.pubDate)}</span>
+                    </div>
+                  </div>
+                </a>
               </article>
             ))}
           </div>
@@ -123,7 +126,7 @@ const Articles = () => {
               <p className="text-gray-600 mb-6">
                 Subscribe to my Substack for weekly insights on data, analytics, and the quantified self movement.
               </p>
-              <a href="#" className="inline-flex items-center bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition-colors">
+              <a href={SUBSTACK_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition-colors">
                 Subscribe on Substack
               </a>
             </div>
