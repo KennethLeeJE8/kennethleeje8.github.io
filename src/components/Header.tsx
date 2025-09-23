@@ -26,7 +26,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gray-50/95 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-6 py-6 flex justify-between items-center">
-        <Link to="/" className="font-mono text-sm text-gray-600 hover:text-black transition-colors">
+        <Link to="/" className="font-mono text-sm text-gray-600 hover:text-black transition-colors flex items-center gap-2">
+          <img src="/favicon.ico" alt="favicon" className="w-4 h-4" />
           kennethleeje.com
         </Link>
         

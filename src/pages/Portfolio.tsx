@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, ExternalLink, Github } from 'lucide-react';
+import { ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 import Header from '@/components/Header';
 
 interface Project {
@@ -10,7 +10,6 @@ interface Project {
   image: string;
   technologies: string[];
   githubUrl?: string;
-  liveUrl?: string;
 }
 
 const portfolioData: Project[] = [
@@ -21,48 +20,43 @@ const portfolioData: Project[] = [
     fullDescription: "The goal of this project was to extract data from a popular website in Malaysia called Lowyat Forum, which is similar to Reddit. The client wanted to know what their brand image was on the website, taking comments from threads about their recent property developments. I extracted the text from multiple threads and forums using Python, developing a Microsoft Excel report that gave insight into the company's image.",
     image: "/images/portfolio/lowyat2.webp",
     technologies: ["Python", "Web Scraping", "Data Analysis", "NLP"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/KennethLeeJE8/datascraping-lowyat"
   },
   {
     id: 2,
     title: "Amazon Sentiment Analysis",
     description: "This is an NLP project that uses Bag-of-Words and TFIDF to perform sentiment analysis on reviews left on multiple products. The model produced was able to correctly predict the sentiment a given comment 70% of the time.",
     fullDescription: "The dataset for this project was taken from Kaggle. The goal of this project was to be able to correctly predict whether a product review is positive or negative by identifying keywords. I used both SVC and Linear SVC for the classification of positive and negative reviews. The project features a model that is able to predict the sentiment of a given comment with a 70% accuracy.",
-    image: "/placeholder.svg",
+    image: "/images/portfolio/amazon-reviews.webp",
     technologies: ["Python", "NLP", "Scikit-learn", "Kaggle"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://www.kaggle.com/code/kennethleeje8/amazon-sentiment-analysis"
   },
   {
     id: 3,
     title: "Health Inspection Data NY",
     description: "This project was done in my Database Management Class, where we ran SQL queries and made a data warehouse from Health Data NY data on health inspection with NY state.",
     fullDescription: "The goal of this project was to clean, process and query the data using Microsoft SQL Server. In class, we converted string variables into numerical representations, reformatted columns and finally built a data warehouse to access this processed data.",
-    image: "/placeholder.svg",
+    image: "/images/portfolio/health-inspections.webp",
     technologies: ["SQL", "Data Warehouse", "Data Cleaning"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/KennethLeeJE8/health-data-NY"
   },
   {
     id: 4,
     title: "Snapcart JSON Tabularization",
     description: "This project was done during my time interning at Snapcart, a consumer analytics company based in Indonesia.",
     fullDescription: "The project is a part of an OCR (Optical Character Recognition) program, specifically parsing items on physical receipts which came in as JSON files. The objective of the project was to correctly map item prices, quantity and discounts to the correct item on the receipt. 81 receipts, with 11 chains for testing, were processed with an accuracy of 94%. Due to confidentiality reasons, the code cannot be shared and thus I made a detailed presentation explaining the project.",
-    image: "/placeholder.svg",
+    image: "/images/portfolio/Snapcart-Gallery.webp",
     technologies: ["Python", "OCR", "JSON", "Data Processing"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "#"
   },
   {
     id: 5,
     title: "KPI Dashboard",
     description: "This project was done for a client on Upwork. The dashboard tracks KPI's such as dollar/lead and conversion rate. The dashboard can be filtered for multiple variables including date and employee.",
     fullDescription: "The dashboard was created by connecting with a client on Upwork, a freelancing platform. The client wanted a dashboard to track their KPI's such as dollar/lead, conversion rate, proportion of leads in progress etc. Besides this, the client requested individual progress reports for his respective employees. Additionally, date, recruiter and client filters were added to get specific measurements of the company progress. Since this project was for a client, the source code is confidential.",
-    image: "/placeholder.svg",
+    image: "/images/portfolio/dashboard_example_dusko.webp",
     technologies: ["Dashboard", "Data Visualization", "Upwork"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "#"
   }
 ];
 
@@ -167,22 +161,15 @@ const Portfolio = () => {
 
                     {/* Action Buttons */}
                     <div className="flex gap-4">
-                      {project.githubUrl && (
+                      {project.githubUrl && project.githubUrl !== "#" && (
                         <a
                           href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 text-sm rounded hover:bg-gray-800 transition-colors"
                         >
-                          <Github size={16} />
-                          View GitHub
-                        </a>
-                      )}
-                      {project.liveUrl && (
-                        <a
-                          href={project.liveUrl}
-                          className="inline-flex items-center gap-2 border border-gray-300 text-gray-700 px-4 py-2 text-sm rounded hover:border-black hover:text-black transition-colors"
-                        >
                           <ExternalLink size={16} />
-                          View Live
+                          View Project
                         </a>
                       )}
                     </div>

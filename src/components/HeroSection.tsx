@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Bookmark } from 'lucide-react';
+import Tooltip from './Tooltip';
 
 const HeroSection = () => {
   return (
@@ -18,8 +19,10 @@ const HeroSection = () => {
               Hi, I'm <span className="font-medium">Kenneth Lee</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I'm a developer and data enthusiast who loves turning messy datasets into meaningful stories. 
-              When I'm not coding, you'll find me exploring personal data projects or building tools that make life a bit easier.
+              I'm a Data Enthusiast, passionate about <Tooltip text="The ability for individuals to control, access, and transfer their personal data between different services and platforms, ensuring data ownership and portability.">Personal Data Mobility</Tooltip>.
+              <br />
+              <br />
+              When I'm not coding, you'll find me tinkering with data systems, reading or exploring new technologies.
             </p>
           </div>
           
@@ -32,6 +35,9 @@ const HeroSection = () => {
             </a>
             <a href="https://www.linkedin.com/in/kenneth-lee-41188b175/" className="p-2 bg-black text-white rounded hover:bg-gray-800 transition-colors" target="_blank" rel="noopener noreferrer">
               <Linkedin size={20} />
+            </a>
+            <a href="https://kennethleeje.substack.com" className="p-2 bg-black text-white rounded hover:bg-gray-800 transition-colors" target="_blank" rel="noopener noreferrer">
+              <Bookmark size={20} />
             </a>
           </div>
         </div>

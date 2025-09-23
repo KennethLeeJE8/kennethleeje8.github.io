@@ -10,7 +10,6 @@ interface Project {
   image: string;
   technologies: string[];
   githubUrl?: string;
-  liveUrl?: string;
 }
 
 const projectsData: Project[] = [
@@ -19,30 +18,27 @@ const projectsData: Project[] = [
     title: "Quantified Self Project",
     description: "This is a personal analytics project that aims to improve awareness of daily activities so that I can implement positive changes to my lifestyle.",
     fullDescription: "I have to admit I'm not the most disciplined person, and so I have employed a dashboard to keep me in check. Working with data in a professional setting, I wondered why I could not apply this to myself, with my productivity, health and wellbeing being the KPI (Key Performance Indicators).",
-    image: "/placeholder.svg",
+    image: "/images/projects/Personal-Analytics-Dashboard.webp",
     technologies: ["Analytics", "Dashboard", "Self-Tracking"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://docs.google.com/spreadsheets/d/1b50T3lnybV9cz1bP9pIew-fhsNGXhjdEv-2yTgelQ8A/edit?usp=sharing"
   },
   {
     id: 2,
     title: "TFT Analysis",
     description: "This is an analysis of the Riot Game TeamFight Tactics, which is an AutoChess Game.",
     fullDescription: "This is a game I play very often, so I thought I might as well make a project out of it. This analysis works on determining the most effective compositions and champions that are in the game based on past results, the statistics that are computed can help guide your decision making while playing the game.",
-    image: "/placeholder.svg",
+    image: "/images/projects/Teamfight-Tactics.webp",
     technologies: ["Game Analysis", "Statistics", "Python"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/KennethLeeJE8/tftanalysis_set3"
   },
   {
     id: 3,
     title: "Spotify Playlist Analysis",
-    description: "This project focused on categorizing music based on attributes assigned to songs by Spotify, such as loudness, valence etc.",
-    fullDescription: "This project focused on categorizing music into genres depending on attributes assigned to each song on Spotify. Spotify assigns attributes to each song, for example, danceability, loudness, acousticness, liveness etc. The end goal was to discover if there was a trend amongst genres, this could potentially be useful in making specialized playlists for people depending on attributes. I imported my personal playlists as test data.",
-    image: "/placeholder.svg",
+    description: "This project examines whether Spotify's audio features, such as danceability, energy, loudness, and acousticness, can reveal patterns across different music genres. By combining my personal playlists with a dataset of songs across seven genres, I looked for trends that could inform playlist creation and improve music recommendations.",
+    fullDescription: "I compared how genres differ in their feature profiles and tested how well these attributes could separate songs into distinct categories. While predicting popularity proved less reliable, the genre patterns were much clearer — for example, metal tracks tended to have higher energy and loudness, while blues and indie showed stronger acoustic qualities. These insights suggest ways to make playlist curation and recommendations more tailored to listener preferences. I imported my personal playlists as test/training data.",
+    image: "/images/projects/spotify.webp",
     technologies: ["Music Analysis", "Spotify API", "Python"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://www.kaggle.com/code/kennethleeje8/spotify-analysis"
   }
 ];
 
@@ -70,8 +66,7 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-light text-black mb-6">Fun Projects</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            The playground where my weird ideas come to life. These are the projects I build when I should be sleeping, 
-            but can't stop coding because they're just too fun! ✨
+            The playground where my weird ideas come to life. These are the projects I build when I should be sleeping haha :)
           </p>
         </div>
       </section>
@@ -148,22 +143,15 @@ const Projects = () => {
 
                     {/* Action Buttons */}
                     <div className="flex gap-4">
-                      {project.githubUrl && (
+                      {project.githubUrl && project.githubUrl !== "#" && (
                         <a
                           href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 text-sm rounded hover:bg-gray-800 transition-colors"
                         >
-                          <Github size={16} />
-                          View GitHub
-                        </a>
-                      )}
-                      {project.liveUrl && (
-                        <a
-                          href={project.liveUrl}
-                          className="inline-flex items-center gap-2 border border-gray-300 text-gray-700 px-4 py-2 text-sm rounded hover:border-black hover:text-black transition-colors"
-                        >
                           <ExternalLink size={16} />
-                          Try It Out
+                          View Project
                         </a>
                       )}
                     </div>

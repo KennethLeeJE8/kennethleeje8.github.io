@@ -69,7 +69,7 @@ const Articles = () => {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-light text-black mb-6">Articles</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            I write about data science, personal analytics, and the stories hidden in everyday numbers. 
+            I write about things I've learned and relearned. refined brain dump 
             Here are my latest thoughts from Substack.
           </p>
           <div className="text-sm text-gray-500">
@@ -83,7 +83,7 @@ const Articles = () => {
       {/* Articles Section */}
       <section className="py-8 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 py-8">
-          {loading && <p>Loading...</p>}
+          {loading && <p>Grabbing live from Substack... Please be patient 😁</p>}
           {error && <p className="text-red-500">{error}</p>}
           <div className="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-2">
             {articles.map((article, idx) => (
