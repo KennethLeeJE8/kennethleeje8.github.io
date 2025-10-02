@@ -30,6 +30,7 @@ const imageBooksData = [
   { id: 13, title: "Finite and Infinite Games", author: "James P. Carse", category: "Miscellaneous", cover: "/images/book-gallery/miscellaneous/finite_and_infinite_games.jpg", description: "" },
   { id: 14, title: "The Art of Strategy", author: "Avinash Dixit & Barry Nalebuff", category: "Miscellaneous", cover: "/images/book-gallery/miscellaneous/the_art_of_strategy.jpg", description: "" },
   { id: 15, title: "The Art of Resilience", author: "Ross Edgley", category: "Miscellaneous", cover: "/images/book-gallery/miscellaneous/the_art_of_resilience.jpg", description: "" },
+  { id: 63, title: "The Innovator's Dilemma", author: "Clayton Christensen", category: "Miscellaneous", cover: "/placeholder.svg", description: "" },
   // Psychology
   { id: 16, title: "Outliers", author: "Malcolm Gladwell", category: "Psychology", cover: "/images/book-gallery/psychology/outliers.jpg", description: "" },
   { id: 17, title: "Blink: The Power of Thinking Without Thinking", author: "Malcolm Gladwell", category: "Psychology", cover: "/images/book-gallery/psychology/blink__the_power_of_thinking_without_thinking.jpg", description: "" },
@@ -39,6 +40,7 @@ const imageBooksData = [
   { id: 21, title: "Predictably Irrational", author: "Dan Ariely", category: "Psychology", cover: "/images/book-gallery/psychology/predictably_irrational.jpg", description: "" },
   { id: 22, title: "Drive", author: "Daniel H. Pink", category: "Psychology", cover: "/images/book-gallery/psychology/drive.jpg", description: "" },
   { id: 23, title: "The Broken Ladder", author: "Keith Payne", category: "Psychology", cover: "/images/book-gallery/psychology/the_broken_ladder.jpg", description: "" },
+  { id: 59, title: "Influence", author: "Robert Cialdini", category: "Psychology", cover: "/images/book-gallery/psychology/influence.jpg", description: "" },
   // Self Help
   { id: 24, title: "48 Laws of Power", author: "Robert Greene", category: "Self Help", cover: "/images/book-gallery/self_help/48_laws_of_power.jpg", description: "" },
   { id: 25, title: "Obstacle is the Way", author: "Ryan Holiday", category: "Self Help", cover: "/images/book-gallery/self_help/obstacle_is_the_way.jpg", description: "" },
@@ -60,6 +62,9 @@ const imageBooksData = [
   { id: 41, title: "12 Rules for Life", author: "Jordan Peterson", category: "Self Help", cover: "/images/book-gallery/self_help/12_rules_for_life.jpg", description: "" },
   { id: 42, title: "Motivation Manifesto", author: "Brendon Burchard", category: "Self Help", cover: "/images/book-gallery/self_help/motivation_manifesto.jpg", description: "" },
   { id: 43, title: "How to Decide: Simple Tools for Making Better Choices", author: "Annie Duke", category: "Self Help", cover: "/images/book-gallery/self_help/how_to_decide__simple_tools_for_making_better_choices.jpg", description: "" },
+  { id: 60, title: "Drive: The Surprising Truth About What Motivates Us", author: "Daniel H. Pink", category: "Self Help", cover: "/images/book-gallery/self_help/drive__the_surprising_truth_about_what_motivates_us.jpg", description: "" },
+  { id: 61, title: "Pre-Suasion: A Revolutionary Way to Influence and Persuade", author: "Robert Cialdini", category: "Self Help", cover: "/images/book-gallery/self_help/pre_suasion_revolutionary_way_influence_persuade.jpg", description: "" },
+  { id: 62, title: "Principles: Life & Work", author: "Ray Dalio", category: "Self Help", cover: "/images/book-gallery/self_help/principles__life___work.jpg", description: "" },
   // Copywriting
   { id: 44, title: "Writing That Works", author: "Kenneth Roman & Joel Raphaelson", category: "Copywriting", cover: "/images/book-gallery/copywriting/writing_that_works.jpg", description: "" },
   { id: 45, title: "Ogilvy on Advertising", author: "David Ogilvy", category: "Copywriting", cover: "/images/book-gallery/copywriting/ogilvy_on_advertising.jpg", description: "" },

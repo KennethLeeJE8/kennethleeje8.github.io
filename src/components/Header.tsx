@@ -48,6 +48,7 @@ const Header = () => {
           <Link to="/projects" className="text-gray-700 hover:text-black transition-colors">projects</Link>
           <Link to="/articles" className="text-gray-700 hover:text-black transition-colors">articles</Link>
           <Link to="/books" className="text-gray-700 hover:text-black transition-colors">books</Link>
+          <Link to="/datadam" className="text-gray-700 hover:text-black transition-colors">datadam</Link>
           <button 
             onClick={() => handleSectionClick('contact')} 
             className="text-gray-700 hover:text-black transition-colors cursor-pointer"
