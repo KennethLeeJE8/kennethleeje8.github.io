@@ -13,10 +13,10 @@ const RSS_URL = 'https://kennethleeje.substack.com/feed';
 const SUBSTACK_URL = 'https://kennethleeje.substack.com';
 
 const parseRSS = async (): Promise<Article[]> => {
-  const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(RSS_URL)}`);
-  const data = await res.json();
+  const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(RSS_URL)}`);
+  const xmlText = await res.text();
   const parser = new window.DOMParser();
-  const xml = parser.parseFromString(data.contents, 'text/xml');
+  const xml = parser.parseFromString(xmlText, 'text/xml');
   const items = Array.from(xml.querySelectorAll('item')).slice(0, 3);
   return items.map(item => {
     const title = item.querySelector('title')?.textContent || '';
