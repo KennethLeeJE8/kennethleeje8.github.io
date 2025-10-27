@@ -19,7 +19,7 @@ const HeroSection = () => {
               Hi, I'm <span className="font-medium">Kenneth Lee</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I'm a Data Enthusiast, passionate about <Tooltip text="The ability for individuals to control, access, and transfer their personal data between different services and platforms, ensuring data ownership and portability.">Personal Data Mobility</Tooltip>.
+              I'm a Data Enthusiast, passionate about <Tooltip text="The ability for individuals to control, access, and transfer their personal data between different services and platforms, ensuring convenient data portability.">Personal Data Mobility</Tooltip>.
               <br />
               <br />
               When I'm not coding, you'll find me tinkering with data systems, reading or exploring new technologies.
