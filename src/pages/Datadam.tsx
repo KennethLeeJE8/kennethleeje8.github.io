@@ -62,7 +62,7 @@ const Datadam = () => {
                   poster=""
                 >
                   <source
-                    src="/videos/claude_desktop_read_spedup.mp4"
+                    src="/videos/claude_code_read.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -70,15 +70,15 @@ const Datadam = () => {
               </div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                In this demo, DataDam pulls my stored reading history and
-                interests. With that context, the AI instantly recommends new
-                titles — complete with explanations that match my taste and
-                curiosity.
+                In this demo, DataDam pulls my stored reading history. With 
+                that context, the agent makes 3 recommendations (based on books 
+                I've read) and puts them into the reading list I have on my 
+                personal website that I manage.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                Instead of repeating “I like self-help and productivity, and
-                I’ve read <em>Atomic Habits</em>,” every time you ask for a
+                Instead of repeating “I like self-help books and biographies and I've 
+                read Atomic Habits and Henry Ford's biography” every time you ask for a
                 recommendation, you save it once — and{" "}
                 <strong>every connected AI remembers</strong>.
               </p>
@@ -93,7 +93,7 @@ const Datadam = () => {
 
               <div className="mt-8">
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Setup takes less than 10 minutes. <br/><br/>
+                  Setting up and connecting to your favourite AI tool takes less than 10 minutes. <br/><br/>
                   Once connected, your AI tools will never forget your context again.
                 </p>
                 <a
