@@ -73,7 +73,7 @@ const Datadam = () => {
                 In this demo, DataDam pulls my stored reading history. With 
                 that context, the agent makes 3 recommendations (based on books 
                 I've read) and puts them into the reading list I have on my 
-                personal website that I manage.
+                personal website.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -83,15 +83,15 @@ const Datadam = () => {
                 <strong>every connected AI remembers</strong>.
               </p>
 
-              <div className="mt-8 p-6 bg-gray-50 rounded-lg">
+              <div className="mt-8 p-6 bg-gray-50 rounded-lg text-center">
                 <p className="text-gray-700 leading-relaxed font-medium">
                   DataDam turns every AI interaction into a{" "}
-                  <strong>personalized experience</strong> — smarter, faster,
+                  <strong>personalized experience.</strong> <br/>Smarter, Faster,
                   and built around you.
                 </p>
               </div>
 
-              <div className="mt-8">
+              <div className="mt-8 text-center">
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Setting up and connecting to your favourite AI tool takes less than 10 minutes. <br/><br/>
                   Once connected, your AI tools will never forget your context again.
