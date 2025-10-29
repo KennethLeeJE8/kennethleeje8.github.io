@@ -1,14 +1,16 @@
-import Header from '@/components/Header';
+import Header from "@/components/Header";
 
 const Datadam = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-light text-black mb-6">DataDam</h1>
+          <h1 className="text-4xl md:text-5xl font-light text-black mb-6">
+            DataDam
+          </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             What I'm currently working on.
           </p>
@@ -20,47 +22,80 @@ const Datadam = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-white rounded-lg shadow-sm p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-medium text-black mb-6">Introducing DataDam</h2>
-              
+              <h2 className="text-2xl font-medium text-black mb-6">
+                Introducing DataDam
+              </h2>
+
               <p className="text-gray-600 leading-relaxed mb-6">
-                DataDam is your personal database designed to work seamlessly with AI tools through MCP (Model Context Protocol). With DataDam, you can <strong>store, retrieve, update, and delete</strong> your own datapoints—from preferences and notes to knowledge and resources. <br /><br /> Instead of re-explaining yourself to every AI client, DataDam connects once and ensures your answers are always <strong>personalized and tailored</strong> to you.
+                <strong>DataDam</strong> is your personal database that works
+                hand-in-hand with AI tools through{" "}
+                <strong>MCP (Model Context Protocol)</strong>. It lets you{" "}
+                <strong>store, retrieve, update, and delete</strong> your own
+                datapoints — from preferences and notes to knowledge and
+                resources — so your AI tools always respond with the right
+                context.
               </p>
 
-              <h3 className="text-xl font-medium text-black mb-4">How it Works</h3>
-              
+              <h3 className="text-xl font-medium text-black mb-4">
+                How It Works
+              </h3>
+
               <p className="text-gray-600 leading-relaxed mb-6">
-                Think of it as your own memory bank for AI. You decide what to put in—favorite books, personal interests, basic information etc. When you ask the AI tool a question, it taps into your DataDam for context, making the response feel <strong>tailored to your life and interests</strong>.
+                Think of DataDam as your AI’s{" "}
+                <strong>personal memory bank</strong>. You decide what goes in —
+                your favorite books, personal interests, or basic information.
+                <br />
+                <br />
+                When you ask a connected AI a question, it draws from your
+                DataDam to tailor responses around your life, habits, and
+                preferences — like talking to an AI that truly remembers you.
               </p>
 
-              <h3 className="text-xl font-medium text-black mb-4">Tailored Book Recommendations</h3>
-              
+              <h3 className="text-xl font-medium text-black mb-4">
+                Example: Tailored Book Recommendations
+              </h3>
+
               <div className="mb-6">
-                <video 
-                  controls 
+                <video
+                  controls
                   className="w-full rounded-lg shadow-sm"
                   poster=""
                 >
-                  <source src="/videos/claude_desktop_read_spedup.mp4" type="video/mp4" />
+                  <source
+                    src="/videos/claude_desktop_read_spedup.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
               </div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                In the demo video, DataDam is used to grab books I've read and my stored personal interests. With this personal context in hand, the AI tool can instantly recommend similar titles with descriptions that help justify why I would find the book interesting.
+                In this demo, DataDam pulls my stored reading history and
+                interests. With that context, the AI instantly recommends new
+                titles — complete with explanations that match my taste and
+                curiosity.
               </p>
 
-              <p className="text-gray-600 leading-relaxed">
-                Instead of saying, "I like self-help and productivity and I've read Atomic Habits" every time, you store it once and <strong>every</strong> connected AI remembers.
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Instead of repeating “I like self-help and productivity, and
+                I’ve read <em>Atomic Habits</em>,” every time you ask for a
+                recommendation, you save it once — and{" "}
+                <strong>every connected AI remembers</strong>.
               </p>
 
               <div className="mt-8 p-6 bg-gray-50 rounded-lg">
                 <p className="text-gray-700 leading-relaxed font-medium">
-                  DataDam transforms your AI tools into a <strong>personalized companion</strong>: smarter, faster, and always aligned with your unique context
+                  DataDam turns every AI interaction into a{" "}
+                  <strong>personalized experience</strong> — smarter, faster,
+                  and built around you.
                 </p>
               </div>
 
-              <div className="mt-8 text-center">
-                <p className="text-gray-600 leading-relaxed mb-6">It takes less than 5 minutes to set up and connect to your favourite AI tool.</p>
+              <div className="mt-8">
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Setup takes less than 10 minutes. <br/><br/>
+                  Once connected, your AI tools will never forget your context again.
+                </p>
                 <a
                   href="https://github.com/KennethLeeJE8/datadam_mcp"
                   target="_blank"
